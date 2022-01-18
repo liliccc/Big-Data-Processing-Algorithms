@@ -8,7 +8,7 @@ public class TopKFrequentWords {
      * @param k: An integer
      * @return: an array of string
      */
-    // use minHeap
+    // use maxHeap
     public String[] topKFrequentWords(String[] words, int k) {
         if (words == null || words.length < k || k < 1) {
             return new String[0];
