@@ -8,6 +8,7 @@ public class MergeKSortedIntervalLists {
      * @return: the new sorted interval list
      */
     public List<Interval> mergeKSortedIntervalLists(List<List<Interval>> intervals) {
+
         return null;
     }
 }
