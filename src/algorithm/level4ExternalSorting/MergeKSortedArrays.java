@@ -5,8 +5,8 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class MergeKSortedArrays {
-
-    private Comparator<Element> elementComparator = new Comparator<>() {
+    // error before: new Comparator<>()
+    private Comparator<Element> elementComparator = new Comparator<Element>() {
         @Override
         public int compare(Element left, Element right) {
             return left.value - right.value;
