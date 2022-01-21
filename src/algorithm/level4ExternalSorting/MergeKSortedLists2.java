@@ -26,7 +26,7 @@ public class MergeKSortedLists2 {
         }
         return lists.get(0);
     }
-
+    // O(logk)
     private ListNode merge(ListNode a, ListNode b) {
         ListNode dummy = new ListNode(0);
         ListNode tail = dummy;

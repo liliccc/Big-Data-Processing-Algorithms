@@ -30,10 +30,12 @@ public class MergeKSortedLists1 {
         ListNode dummy = new ListNode(0);
         ListNode tail = dummy;
         while (!minHeap.isEmpty()) {
+            // O(logk)
             ListNode node = minHeap.poll();
             tail.next = node;
             tail = node;
             if (node.next != null) {
+                // O(logk)
                 minHeap.offer(node.next);
             }
         }
